@@ -1,7 +1,6 @@
-import { Icon } from "@/components/icon";
-import LocalePicker from "@/components/locale-picker";
+
 import { useSettings } from "@/store/settingStore";
-import { Button } from "@/ui/button";
+// import { Button } from "@/ui/button";
 import { cn } from "@/utils";
 import type { ReactNode } from "react";
 import AccountDropdown from "../components/account-dropdown";
@@ -33,14 +32,14 @@ export default function Header({ leftSlot }: HeaderProps) {
 			<div className="flex items-center gap-1">
 				<SearchBar />
 				{/* <LocalePicker /> */}
-				<Button
+				{/* <Button
 					variant="ghost"
 					size="icon"
 					className="rounded-full"
 					onClick={() => window.open("")}
 				>
 					{/* <Icon icon="mdi:github" size={24} /> */}
-				</Button>
+				{/* </Button> */} 
 
 
 				<NoticeButton />
